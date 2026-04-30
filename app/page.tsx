@@ -58,8 +58,8 @@ export default function Home() {
       <Header />
 
       <section className="mx-auto max-w-page px-6 pt-12 pb-10 md:pt-16">
-        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
-          <div>
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+          <div className="order-2 md:order-1">
             <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight md:text-[60px]">
               See what the packet would say if it had to{" "}
               <span className="text-truthred">tell the truth.</span>
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative order-1 md:order-2">
             <HeroIllustration />
           </div>
         </div>
