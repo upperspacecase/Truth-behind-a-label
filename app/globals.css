@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #fbf6ec;
+  --cream-2: #f4ecdb;
+  --ink: #0f0f0f;
+  --truthred: #e8412b;
+}
+
+html,
+body {
+  background: var(--cream);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-3 rounded-xl bg-ink px-6 py-4 text-white font-semibold transition hover:bg-black/90 active:scale-[0.99];
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm text-ink/80 ring-1 ring-black/5;
+  }
+
+  .nav-link {
+    @apply text-ink/80 hover:text-ink transition-colors text-[15px];
+  }
+
+  .check-dot {
+    @apply inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700;
+  }
+}
